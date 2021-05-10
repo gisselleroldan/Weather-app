@@ -2,7 +2,7 @@ input = prompt("Enter a city name");
 
 // Weather API
 let result = fetch(
-  `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${apiKey}`
+  `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${APIKEY}`
 )
   .then((response) => response.json())
   .then((data) => {
